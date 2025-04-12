@@ -13,9 +13,9 @@ A Flask-based web application that predicts diabetes risk using machine learning
 - 🔐 Secure password handling
 
 ## Technologies Used
-Model: Scikit learn, XgBoost
- - Backend: Django
-  - Db:SQLite
-  - Frontend:HTML &CSS
+- Scikit learn, XgBoost
+ - Django
+  - SQLite
+  - HTML ,CSS &Javascript 
  
- -Javascript
+
