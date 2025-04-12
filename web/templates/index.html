@@ -9,6 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/auth.css' %}">
     <style>
       header{
         background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("{% static 'images/OIP.jpeg' %}");
@@ -16,6 +17,7 @@
     </style>
 </head>
 <body>
+ 
     <header>
    
         <nav>
@@ -25,18 +27,41 @@
            <ul class="main-nav">
              <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
-            
-              <li><a href="#logout">Log-out</a></li>
+              {% if user.is_authenticated %}
+              <li><a href="profile">profile</a></li>
+             <li> <a href="{% url 'logout' %}">Logout</a></li>
+          {% else %}
+              <li><a href="{% url 'login' %}">Login</a></li>
+              <li><a href="{% url 'register' %}">Register</a></li>
+
+          {% endif %}
             </ul>
           </div>
         </nav>
+        <div class="container">
+          {% if messages %}
+          <ul class="messages">
+              {% for message in messages %}
+              <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+              {% endfor %}
+          </ul>
+          {% endif %}
+  
+          {% block content %}
+          {% endblock %}
+      </div>
+      </header>
+    
+      
         <div class="hero-text">
           <h1>Great technology in the hands of great doctors can change <br>Everything</h1>
           <a href="#predict" class="btn btn-full">Predict</a>
           <a href="#about"class="btn btn-ghost">Show me more</a>
       
         </div>
-      </header>
+        
+      
+      
       <section  class="about" id="about">
         <h1>About-Us</h1>
         <p>Health Risk Predictor is an <span>AI-driven platform designed specifically for doctors</span> to enhance decision-making, improve patient outcomes, and streamline clinical workflows. Our mission is to empower healthcare professionals with cutting-edge tools that predict <span> hospital readmissions, optimize medication plans, and assess chronic disease risks using Electronic Health Records (EHR) data.</span></p>
