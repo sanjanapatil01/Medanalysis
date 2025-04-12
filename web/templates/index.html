@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedAnalysis</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+      header{
+        background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("{% static 'images/OIP.jpeg' %}");
+      }
+    </style>
+</head>
+<body>
+    <header>
+   
+        <nav>
+          <div class="row">
+         
+            <img src="{% static 'images/logo.png' %}" alt="logo-img" class="logo">
+           <ul class="main-nav">
+             <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+            
+              <li><a href="#logout">Log-out</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="hero-text">
+          <h1>Great technology in the hands of great doctors can change <br>Everything</h1>
+          <a href="#predict" class="btn btn-full">Predict</a>
+          <a href="#about"class="btn btn-ghost">Show me more</a>
+      
+        </div>
+      </header>
+      <section  class="about" id="about">
+        <h1>About-Us</h1>
+        <p>Health Risk Predictor is an <span>AI-driven platform designed specifically for doctors</span> to enhance decision-making, improve patient outcomes, and streamline clinical workflows. Our mission is to empower healthcare professionals with cutting-edge tools that predict <span> hospital readmissions, optimize medication plans, and assess chronic disease risks using Electronic Health Records (EHR) data.</span></p>
+        <p>By leveraging advanced machine learning algorithms, we help <span>identify high-risk patients early</span>, <span>personalized and evidence-based treatment strategies</span> , <span>and reduce unnecessary readmissions</span> . Our platform integrates effortlessly with existing EHR systems, ensuring a seamless user experience without disrupting current practices.</p>
+
+      </section>
+      <section class="serve">
+        <h1>We Serve</h1>
+        <p>At Health Risk Predictor, we specialize in early detection and risk stratification for Cardiovascular Disease (CVD) and Diabetes, two of the most prevalent and high-impact chronic conditions.</p>
+        <div class="disease">
+        <div class="CVD">
+          <h2> Cardiovascular Disease (CVD)</h2>
+          <p>Cardiovascular Disease (CVD) refers to a group of disorders that affect the heart and blood vessels. Common types include coronary artery disease, heart failure, stroke, and hypertension (high blood pressure).</p>
+
+        </div>
+        <div class="diabetes">
+          <h2> Diabetes</h2>
+          <p>Diabetes is a chronic condition where the body cannot properly regulate blood sugar (glucose) levels. It is mainly categorized into Type 1 (autoimmune) and Type 2 (linked to insulin resistance and lifestyle).</p>
+        </div>
+      </div>
+      </section>
+    
+</body>
+</html>
