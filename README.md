@@ -16,6 +16,9 @@ A Flask-based web application that predicts diabetes risk using machine learning
 - Scikit learn, XgBoost
  - Django
   - SQLite
-  - HTML ,CSS &Javascript 
+  - HTML ,CSS &Javascript
+
+## 
+![Screenshot]("C:\Users\suhel\OneDrive\Pictures\Screenshots\Screenshot 2025-04-13 163027.png")
  
 
