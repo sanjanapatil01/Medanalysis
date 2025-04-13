@@ -4,9 +4,9 @@
 # Diabetes Risk Prediction System
 A Flask-based web application that predicts diabetes risk using machine learning.
 
-
-<img src="https://github.com/sanjanapatil01/Medanalysis/blob/main/WhatsApp%20Image%202025-04-13%20at%2016.48.28_a98ed44a.jpg">
 <img src="https://github.com/sanjanapatil01/Medanalysis/blob/main/WhatsApp%20Image%202025-04-13%20at%2016.48.32_4a9226e1.jpg">
+<img src="https://github.com/sanjanapatil01/Medanalysis/blob/main/WhatsApp%20Image%202025-04-13%20at%2016.48.28_a98ed44a.jpg">
+
 <img src="https://github.com/sanjanapatil01/Medanalysis/blob/main/WhatsApp%20Image%202025-04-13%20at%2016.48.39_cd44ffc2.jpg">
 
 ## Features
