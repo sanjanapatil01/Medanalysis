@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Risk Assessment</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="diabetes.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetes Risk Assessment</h1>
+        <form id="diabetes-risk-form">
+            <label for="pregnancies">Pregnancies:</label>
+            <input type="number" id="pregnancies" name="pregnancies" placeholder="Enter number of pregnancies" required>
+
+            <label for="glucose">Glucose (mg/dL):</label>
+            <input type="number" id="glucose" name="glucose" placeholder="Enter glucose level" required>
+
+            <label for="blood-pressure">Blood Pressure (mmHg):</label>
+            <input type="number" id="blood-pressure" name="blood-pressure" placeholder="Enter blood pressure" required>
+
+            <label for="skin-thickness">Skin Thickness (mm):</label>
+            <input type="number" id="skin-thickness" name="skin-thickness" placeholder="Enter skin thickness" required>
+
+            <label for="insulin">Insulin (µU/mL):</label>
+            <input type="number" id="insulin" name="insulin" placeholder="Enter insulin level" required>
+
+            <label for="bmi">BMI:</label>
+            <input type="number" id="bmi" name="bmi" placeholder="Enter BMI" step="0.01" required>
+
+            <label for="diabetes-pedigree">Diabetes Pedigree Function:</label>
+            <input type="number" id="diabetes-pedigree" name="diabetes-pedigree" placeholder="Enter value" step="0.01" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+            <button type="submit">Predict Diabetes Risk</button>
+        </form>
+    </div>
+</body>
+</html>
