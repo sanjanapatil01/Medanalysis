@@ -18,7 +18,8 @@ A Flask-based web application that predicts diabetes risk using machine learning
   - SQLite
   - HTML ,CSS &Javascript
 
-## 
+##
+-Youtube link : <a href="https://youtu.be/l03WI2T83bg?si=4mkAmKOU2W669tFV"></a>
 ![Screenshot]("C:\Users\suhel\OneDrive\Pictures\Screenshots\Screenshot 2025-04-13 163027.png")
  
 
