@@ -19,7 +19,7 @@ A Flask-based web application that predicts diabetes risk using machine learning
   - HTML ,CSS &Javascript
 
 ##
--Youtube link : <a href="https://youtu.be/l03WI2T83bg?si=4mkAmKOU2W669tFV"></a>
+-Youtube link : <a href="https://youtu.be/l03WI2T83bg?si=4mkAmKOU2W669tFV">YouTube</a>
 ![Screenshot]("C:\Users\suhel\OneDrive\Pictures\Screenshots\Screenshot 2025-04-13 163027.png")
  
 
