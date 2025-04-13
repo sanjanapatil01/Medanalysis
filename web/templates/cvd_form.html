@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict CVD Risk</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/CVD.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Predict CVD Risk</h1>
+        <form id="cvd-risk-form" method="post" action="{% url 'cvd' %}">
+            {% csrf_token %}
+            <label for="age">Age (years):</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" min="18" max="120" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select your gender</option>
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+            </select>
+
+            <label for="systolic-bp">Systolic BP (mmHg):</label>
+            <input type="number" id="systolic-bp" name="systolic-bp" placeholder="Enter systolic BP" min="70" max="300" required>
+
+            <label for="diastolic-bp">Diastolic BP (mmHg):</label>
+            <input type="number" id="diastolic-bp" name="diastolic-bp" max="200" min="40" placeholder="Enter diastolic BP" required>
+
+            <label for="cholesterol">Cholesterol (mg/dL):</label>
+            <input type="number" id="cholesterol" name="cholesterol" min="100" max="400" placeholder="Enter cholesterol level" required>
+
+            <label for="smoking-status">Smoking Status:</label>
+            <select id="smoking-status" name="smoking-status" required>
+                <option value="" disabled selected>Select smoking status</option>
+                <option value="1">Smoker</option>
+                <option value="0">Non-Smoker</option>
+            </select>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" min="30" max="300" placeholder="Enter your weight" required>
+
+            <button type="submit">Predict CVD Risk</button>
+        </form>
+    </div>
+</body>
+</html>
