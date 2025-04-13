@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .predict{
     background-color: black;
     height: 100vh;
@@ -174,3 +175,181 @@ h1{
         line-height: 1.6;
     }
 }
+=======
+.predict{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: lato,sans-serif;
+    background-color: black;
+}
+.home{
+    color:white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 90%;
+    border: 2px solid transparent;
+    padding: 8px 15px;
+    transition: border-bottom 0.2s;
+    border: 2px solid #285c89bb;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-right: 100px;
+    float: right;
+}
+.home:hover{
+    background-color: rgba(71, 102, 202, 0.508);
+}
+.content{
+    display: flex;
+}
+.content div{
+    width: 40%;
+    margin-left:30px ;
+    margin-right: 30px;
+    height: 400px;
+    align-content: center;
+    text-align: center;
+  
+  
+}
+h1{
+    background-color: black;
+    color: white;
+    align-content: center;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 3rem;
+    font-weight: 300;
+    animation: head 3s infinite ;
+    padding-left: 200px;
+
+}
+@keyframes head{
+    0%{
+        color: rgb(49, 95, 174);
+    }
+    30%{
+        color: white;
+    }
+    60%
+    {
+         color: rgb(7, 39, 108);
+    }
+    90%{
+        color: white;
+    }
+}
+.whole a{
+    text-decoration: none;
+}
+.whole h1{
+    align-content: center;
+    margin: 0;
+
+}
+.image img{
+    height: 230px;
+      width: 50%;
+      margin: auto;
+      text-align: end;
+      border-radius: 10px;
+      padding: 20px 40px;
+      background-color: transparent;
+      animation: verticalRotateImage 3s linear infinite;
+      margin-left: 250px;
+
+}
+@keyframes verticalRotateImage {
+    from {
+        transform: rotateY(0deg); /* Start position */
+      }
+      to {
+        transform: rotateY(360deg); /* Complete vertical rotation */
+      }
+}
+
+.whole button{
+    margin-left: 100px;
+    height: 40px;
+   padding: 10px;
+    color: white;
+    border-radius: 20px;
+    background-color:rgba(51, 115, 175, 0.608);
+    border: 2px solid transparent;
+    font-weight: 300;
+ font-size: 1rem;
+ transition: 1s ease-in-out;
+ }
+ .whole button:hover{
+    transform: scale(1.1);
+    background-color: rgba(32, 59, 133, 0.603);
+ }
+
+ ul{
+    margin-left: 20%;
+    margin-right: 20%;
+ }
+ ul li{
+    line-height: 2;
+    font-size: 1.2rem;
+    font-weight: 300;
+ }
+ ul li:nth-child(odd) {
+    color: rgb(44, 101, 159);
+}
+@media only screen and (max-width: 480px) {
+    .content{
+        display: block;
+    }
+  
+    .home{
+        margin-right: 10px;
+        padding: 10px;
+        font-size: 8px;
+        margin-top: 10px;
+    }
+    .image img{
+        margin-left: 20px;
+        height: 200px;
+    }
+
+    .content div {
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    
+
+    .whole button {
+        margin: 10px 0;
+        width: 70%;
+        font-size: 0.8rem;
+        padding: 12px;
+        margin-left: 20px;
+        
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin: 20px 0;
+        margin-left: 20px;
+        padding-left: 10px;
+    }
+
+    ul {
+        margin: 10%;
+    }
+
+    ul li {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+>>>>>>> df0f07c08fd69980562d3d098f0de45554fbe74b
